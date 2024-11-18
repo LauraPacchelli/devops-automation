@@ -13,7 +13,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    bat 'docker build -t laura2895/devops-integration .'
+                    bat 'docker build -t laura/devops-integration .'
                 }
             }
         }
