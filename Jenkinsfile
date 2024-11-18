@@ -13,7 +13,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    bat 'docker build -t laura/devops-integration .'
+                    bat 'docker build -t laura2895/devops-integration .'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
                            bat 'docker login -u laura2895 -p ${dockerhubpwd}'
 
         }
-                           bat 'docker push laura/devops-integration'
+                           bat 'docker push laura2895/devops-integration'
                         }
                     }
                 }
