@@ -21,7 +21,7 @@ pipeline {
                     steps{
                         script{
                            withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
-                           bat 'docker login -u laura2895 -p ${dockerhubpwd}'
+                           bat 'docker login -u laura2895 -p %dockerhubpwd%'
 
         }
                            bat 'docker push laura2895/devops-integration'
