@@ -8,4 +8,20 @@ public class Greeting {
         this.content = content;
         this.id = id;
     }
+
+    public long getId() {
+        return id;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
 }
